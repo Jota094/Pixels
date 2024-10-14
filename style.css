@@ -1,0 +1,229 @@
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////GENERAL//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h1{
+    font-family: 'pixels';
+    font-size: 12rem;
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+    padding-bottom: 3rem;
+}
+
+h2{
+    font-family: 'pixels';
+    font-size: 3rem;
+    letter-spacing:0.5rem ;
+    padding-bottom: 3rem;
+}
+
+
+p{
+    font-family: 'pixels2';
+    font-size: 25px;
+}
+
+a button{
+    margin: 2%;
+    padding: 0.5rem;
+    background-color: #023b0400;
+    border-style: dashed;
+    border-color: aliceblue;
+    border-width: 5px;
+    font-family: 'pixels2';
+    font-size: 20px;
+    border-radius:100px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////NAVBAR///////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.logo{
+    max-width: 15%;
+    filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+}
+
+.nav_pixels{
+    color: aliceblue;
+    margin-left: 2.5rem;
+    font-family: 'pixels2';
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////BANNER//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.mario_banner{
+    width: 100%;
+    height: 60rem;
+    position:relative;
+    object-fit: cover;
+    filter: brightness(25%);
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    padding: 1% 5%;
+    background-color: rgba(0, 0, 0, 0.568);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.s_main{
+    color: aliceblue;
+}
+
+.main{
+    position: absolute;
+    z-index: 100;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.main h1{
+    text-align: center;
+    letter-spacing: 1rem;
+    padding-bottom: 5%;
+}
+
+.main p{
+    padding-top: 2rem;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 25px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////CARDS//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.s_cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card{
+    overflow: hidden;
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    align-items: flex-start;
+    color: rgb(255, 255, 255);
+    height: 20%;
+    transition: all 0.6s ease-in-out;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.card img{
+    border-radius: 5%;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.card_content{
+    grid-row: 2;
+    grid-column: 0;
+    opacity: 0;
+    width: 90%;
+    transform: translateY(10%);
+    grid-column: 1;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+    text-align: center;
+}
+
+.card:hover{
+    flex-grow: 3;
+}
+.card:hover .card_content{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////ABOUT US//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.about_us{
+    background-color: black;
+    padding: 2% 5% 2% 5%;
+} 
+
+.about_us li{
+    font-family:'pixels2';
+    font-size: 20px;
+}
+
+.about_us p{
+    font-size: 20px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////CONTACT//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.contact{
+    background-color: black;
+    padding: 2% 5% 2% 5%;
+}
+
+.contact p{
+    font-size: 20px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////GAMES//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////FONTS////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@font-face {
+    font-family: 'pixels';
+    src: url(fonts/8-bitanco.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pixels2';
+    src: url(fonts/retro_gaming.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Crang';
+    src: url(fonts/Crang.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
